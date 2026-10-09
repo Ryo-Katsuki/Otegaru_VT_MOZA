@@ -7,7 +7,7 @@ using static mozaAPI.mozaAPI;
 
 public class MozaController : MonoBehaviour
 {
-    private HidDevice hid_device;
+    //private HidDevice hid_device;
     private HIDData hid_data;
     private ERRORCODE errorcode;
 
@@ -16,9 +16,9 @@ public class MozaController : MonoBehaviour
         installMozaSDK();
     }
 
-    public void Setup(){
+    /*public void Setup(){
         hid_device = new HidDevice();
-    }
+    }*/
 
     // Update is called once per frame
     void Update(){
