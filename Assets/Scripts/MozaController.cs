@@ -36,7 +36,7 @@ public class MozaController : MonoBehaviour
         removeMozaSDK();
     }
 
-    public float getSteeringAngle(){
+    public float GetSteeringAngle(){
         return hid_data.fSteeringWheelAngle;
     }
 }
