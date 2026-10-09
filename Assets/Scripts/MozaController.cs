@@ -22,6 +22,7 @@ public class MozaController : MonoBehaviour
         }
         catch(Exception ex){
             Debug.Log($"HIDData error:{ex}");
+            Debug.Log($"HIDData errorcode:{errorcode}");
             return;
         }
         
