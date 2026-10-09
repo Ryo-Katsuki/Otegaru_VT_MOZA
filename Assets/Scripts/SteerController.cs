@@ -23,16 +23,17 @@ public class SteerController : MonoBehaviour
         angle_buffer = moza_cont.GetSteeringAngle();
 
         if(!float.IsNaN(angle_buffer)){
+            angle_final = angle_buffer;
+
             if(angle_buffer > 120f){
                 angle_final = 120f;
-            }else if(angle_buffer < -120f){
+            }
+            if(angle_buffer < -120f){
                 angle_final = -120f;
-            }else{
-                angle_final = angle_buffer;
             }
 
         }
 
-        pivot.transform.rotation = Quaternion.Euler(0f, 0f, angle_final);
+        pivot.transform.rotation = Quaternion.Euler(0f, 0f, - angle_final);
     }
 }
